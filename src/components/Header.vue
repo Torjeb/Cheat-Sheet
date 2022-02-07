@@ -2,13 +2,8 @@
 	<header>
 		<RouterLink :to="{ name: 'home' }">Go to "home"</RouterLink>
 		<br />
-		<RouterLink :to="{ name: 'component', params: { component_id: 'clock' } }"
-			>Go to "component" med "component_id": "clock"</RouterLink
-		>
-		<br />
-		<button @click="push">Push to /</button>
-		<br />
-		<button @click="replace">Replace to /</button>
+
+		<RouterLink :to="{ name: 'shortcuts' }">Shortcuts</RouterLink>
 
 		<!-- 
 			eksterne lenker
@@ -18,27 +13,27 @@
 </template>
 
 <script>
-	export default {
-		methods: {
-			push() {
-				this.$router.push('/');
-			},
-
-			replace() {
-				this.$router.replace('/');
-			},
+export default {
+	methods: {
+		push() {
+			this.$router.push("/");
 		},
-	};
+
+		replace() {
+			this.$router.replace("/");
+		},
+	},
+};
 </script>
 
 <style>
-	header {
-		margin-bottom: 1em;
-		font-size: 0.5em;
-		background: #eee;
-	}
+header {
+	margin-bottom: 1em;
+	font-size: 0.5em;
+	background: #eee;
+}
 
-	header .router-link-active {
-		background: yellow;
-	}
+header .router-link-active {
+	background: yellow;
+}
 </style>

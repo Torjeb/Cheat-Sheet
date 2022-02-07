@@ -1,17 +1,5 @@
-<template>
-	HOME!!
-</template>
+<template>HOME!!</template>
 
-<script>
-	export default {
-		data() {
-			return {}
-		},
+<script></script>
 
-		// this.$router
-		// this.$route
-	}
-</script>
-
-<style>
-</style>
+<style></style>

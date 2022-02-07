@@ -1,6 +1,6 @@
-import Home from './views/Home.vue';
-import Component from './views/Component.vue';
-import About from './views/About.vue';
+import Home from "./views/Home.vue";
+import Shortcuts from "./views/Shortcuts.vue";
+import About from "./views/About.vue";
 
 /* 
 	"param" 			:test
@@ -10,7 +10,7 @@ import About from './views/About.vue';
 /* prettier-ignore */
 export default [
 	{ name: 'about', 		path: '/about', 			component: About },
-	{ name: 'component', path: '/:component_id', component: Component },
+	{ name: 'shortcuts', path: '/shortcuts', component: Shortcuts },
 	{ name: 'home', 		path: '/', 					component: Home },
 	// { name: 'not-found' }
 ]
